@@ -1,0 +1,42 @@
+Q) Form a Permutation!
+
+There is an array with elements from 1 to n. Now the task is to change(replace) minimum number of elements in that array such that it forms a permutation i.e., each of the integers from 1 to n must be encountered in the array exactly once. 
+
+In case of more than one solution find the permutation which is lexicographically minimum
+
+In order to determine which of the two permutations is lexicographically smaller, we compare their first elements. If they are equal — compare the second, and so on. If we have two permutations x and y, then x is lexicographically smaller 
+if xi <yi, where i is the first index in which the permutations x and y differ.
+
+Input:
+Input is a file which contains 2 lines.
+The first line will contain the number of elements in the array
+The second line will contain the elements of the array
+
+Output:
+First line must contain the minimum number of elements that need to be changed
+Second line must contain the permutation which is lexicographically minimum and obtained from the array.
+
+Example 1:
+
+Input:
+4
+3 2 2 3
+
+Output:
+2
+1 2 4 3
+
+Example 2:
+
+Input:
+6
+4 5 6 3 2 1
+
+Output:
+0
+4 5 6 3 2 1 
+
+Explantion:
+In first case the different possibilities with 2 changes/replacements are 1 2 4 3 , 3 2 1 4, 3 2 4 1 
+amonst all 1 2 4 3 is the lexicographically smallest permutation.
+In second case there is no need of any change because the given array is already a permutation.

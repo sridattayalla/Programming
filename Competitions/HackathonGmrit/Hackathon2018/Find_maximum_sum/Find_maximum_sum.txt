@@ -1,0 +1,40 @@
+Q) Find maximum sum
+
+A and B are 2 arrays with 'N' elements say a1,a2,...an and b1,b2,...bn resp. 
+For any pair (i, j) with i, j ϵ {1, 2, ..., N} we define the segment from i to j, written as seg[i, j], to be 
+if i ≤ j  seg[i,j] = {i, i + 1, ..., j} 
+if i > j seg[i,j] = {i, i + 1, ..., N, 1, 2, ...,j} 
+
+Thus if N = 5 then the seg[2, 4] = {2, 3, 4} and seg[4, 2] = {4, 5, 1, 2}.
+
+With each seg[i, j] we associate a formula sum[i, j] to calculate the sum :
+
+If i==j then, sum[i, i] = ai.
+If i ≠ j then,  sum[i, j] = ai + aj +  ∑ bk where k ϵ seg[i,j] and k!=i,j 
+
+The positions i and j contribute ai and aj to the sum while every other position k in seg[i, j] contributes bk.
+
+The task is to find the maximum sum.
+
+Input:
+Input is a file which contains 3 lines
+The first line contains a single positive integer N.
+Second line contains N integers of array A and
+Third line contains N integers of array B
+
+Output:
+
+3 integer's in a single line giving the segment index i.e., i and j and the maximum possible special segment sum.
+
+Example:
+
+Input:
+5
+2 3 2 3 1
+3 4 4 6 3
+
+Output:
+2 1 18
+
+Explanation:
+sum[1, 1] = 2, sum[2, 4] = 3 + 4 + 3 = 10 and sum[4, 2] = 3 + 3 + 3 + 3 = 12. ..so on...sum[2, 1] = 18

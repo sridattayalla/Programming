@@ -1,0 +1,24 @@
+Q) palindrome
+
+From a given alphanumeric string remove all the alphabets and special characters [ exclude '-' (minus) if it occurs ONLY at the begining ] and find out the next greater palindrome number from the formed number using the same digits. If no palindrome is possible than -1
+
+
+
+Example1:
+
+Input:co?3d5er45,3
+Output:53435
+
+Example2:
+
+Input:-g4e3e5k3s4
+Output:-34543
+
+Example3:
+
+Input:-nu23m-2
+OUtput:-1
+
+Explanation:
+In case 1 from the given string after removing all the alphabets and special characters we get 35453 and next greater palindrome that can be formed from that number is 53435
+In case 3 after removing all spl characters the number is -232 and no palindrome can be formed so -1

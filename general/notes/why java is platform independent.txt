@@ -1,0 +1,7 @@
+source code : what programmer actually types
+byte code : 
+
+java is platform independent
+
+source code is converted into bytecode, this bytecode will be converted into native code by JVM.
+so we can use same source code to generate bytecode which will be taken by JVM and converted into native code irrespective of OS.

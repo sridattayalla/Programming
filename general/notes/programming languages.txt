@@ -1,0 +1,6 @@
+programming languages re two types high level and low level
+high level languages have readable syntaxes not like low leevel languages
+high level languages examples : java, c, ruby, python, pearl, javascript.
+low level programming languages exmp: Assembly language, Machine language.
+every high level language will convert into low level language before execution with compilation.
+main root of all languages is machine language, even assembly language is to be converted into machine language with assembler.
